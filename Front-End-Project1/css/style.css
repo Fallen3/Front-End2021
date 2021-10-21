@@ -1,0 +1,123 @@
+/*Body*/
+body{
+    background-color:black !important;
+    font-family: monospace;
+    color: ghostwhite;
+}
+p{
+    font-size: 20px;
+}
+.carousel{
+    width: 60%;
+    
+    margin: 0 auto;
+}
+/*Contact form*/
+.form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: rosybrown;
+    padding: 10px;
+    color: ghostwhite;
+    font-size: larger;
+}
+
+/*Center image*/
+.picture{
+    justify-content: center;
+    
+    display: flex;
+}
+/*Image properties*/
+.me{
+    border-color:greenyellow;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    size: 10%;
+    height: 300px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    filter: grayscale(100%);
+    
+}
+
+/*Transform image upon hovering*/
+.me:hover{
+    filter: none;
+    animation: me 1s ease;
+    animation-iteration-count: 1;
+}
+
+/*Animation transform*/
+@keyframes me{
+    15%{transform: translateX(5px);
+}
+    30%{transform: translateX(-5px);
+}
+    50%{transform: translateX(3px);
+}
+    65%{transform: translateX(-3px);
+}
+    80%{transform: translateX(2px);
+}
+    100%{transform: translateX(0);
+}
+}
+/*Carousel height*/
+.carousel-inner{
+    height:  auto;
+}
+/*Size of social icons*/
+.bi-facebook, .bi-linkedin, .bi-instagram{
+    font-size: 30px;
+    
+    
+    
+ 
+}
+/*Change background color and text colour upon hovering*/
+.nav-item:hover a{
+    background-color: black;
+    color: whitesmoke;
+}
+/*Animation transform*/
+@keyframes rotate {
+    0%   {transform: rotate(0);
+}
+    100% {transform: rotate(360deg);
+}
+
+}
+/*Transform icons 360 deg upon hovering*/
+.rotate:hover {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+
+/*Extra small devices (Standard smart phones) */
+@media (max-width: 576px){ 
+    body {background-color: #212F3D}
+    p   {font-size: 12px;}
+    li  {font-size: 12px;}
+    .form   {width: 70%; font-size: 12px;}
+    .display-4 {font-size: 32px;}
+    .lead{font-size: 20px;}
+    
+ }
+
+/*Medium devices (Tablets etc) */    
+@media (min-width: 900px) { 
+    body{background-color: #212F3D;}
+    p{font-size: 20px;}
+}
+/*Large devices (Desktops and Laptops */ 
+@media (min-width: 1200px) { 
+    body{background-color: #212F3D;}
+    p{font-size: 20px;}
+    
+}
+ 
